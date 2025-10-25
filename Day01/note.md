@@ -38,7 +38,7 @@ a, link
 
 1. Prettier - Code Formatter
 2. Settings > Auto Save -> OnFocus Change
-3. Settings > Format On Save
+3. Settings > Format On Save -> Checked
 4. Settings > Default Formatter -> Prettier - Code formatter
 
 ---
@@ -50,3 +50,18 @@ Về nhà:
 ### Đọc trước lesson 2.
 
 ### Tìm hiểu sớm GIT
+
+https://github.com/hoangnm-ndm
+
+## emmet code for html
+
+- ">": Đi vào trong thẻ
+- "^": Đi ra ngoài thẻ
+- "\*": Nhân bản thẻ
+- "[]": Thêm các thuộc tính của thẻ.
+- "{}": Thêm nội dung vào thẻ.
+- "+": Tạo thẻ kế tiếp.
+- "$": Chèn số thứ tự vào thẻ khi nhân bản.
+- "()": Nhóm các thẻ lại với nhau.
+- "#": Tạo thẻ với id.
+- ".": Tạo thẻ với class.
