@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: yellow;
+        width: 200px;
+        height: 100px;
+      }
+
+      .box-1 {
+        margin-bottom: 30px;
+        border: 1px solid red;
+      }
+
+      .box-2 {
+        margin-top: 20px;
+        border: 1px solid red;
+      }
+
+      /* marin collapse */
+      /* 20 + 30 = 50 */
+
+      .parent {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+      }
+
+      .child {
+        background-color: green;
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+        border: 3px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-1">box 1</div>
+    <div class="box box-2">box 2</div>
+
+    <div class="parent">
+      <div class="child">noi dung the con</div>
+    </div>
+  </body>
+</html>

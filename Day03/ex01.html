@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        /* box-sizing: content-box; */
+        /* defautl value: content-box */
+        box-sizing: border-box;
+        border: 2px solid red;
+
+        border-top: 5px solid blue;
+        border-left-color: red;
+        border-left-width: 10px;
+        border-left-style: double;
+        /* padding: 40px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        padding-right: 15px; */
+        /* padding: 20px 15px 10px 5px; */
+        /* top right bottom left */
+
+        /* padding: 20px 30px 10px; */
+        /* top left-right bottom */
+
+        padding: 20px 10px;
+        /* top-bottom left-right */
+        width: 300px;
+        /* width = 300px = border + padding + content */
+        height: 300px;
+        /* margin */
+        /* outline */
+        /* background */
+        /* box-shadow */
+      }
+
+      /* 
+
+      content box
+        width: 2 + 40 + 300 + 40 + 2 = 384
+        height = 384
+      */
+
+      /* 
+        border-box
+        width: 2 + 40 + 300 + 40 + 2 = 384
+        height = 384
+      */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+      temporibus!
+    </div>
+  </body>
+</html>
