@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display: grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        background-color: orange;
+        border: 2px dashed red;
+        width: 400px;
+        height: 400px;
+        display: grid;
+        gap: 10px;
+        /* grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "i1 i1 i2"
+          "i4 i5 i2"
+          "i4 i3 i3"; */
+        grid-template:
+          "i1 i1 i2" 1fr
+          "i4 i5 i2" 1fr
+          "i4 i3 i3" 1fr / 1fr 1fr 1fr;
+      }
+
+      .item {
+        background-color: pink;
+        border: 1px solid blue;
+        /* width: 80px; */
+        /* height: 80px; */
+      }
+
+      .item:nth-child(1) {
+        grid-area: i1;
+      }
+
+      .item:nth-child(2) {
+        grid-area: i2;
+      }
+
+      .item:nth-child(3) {
+        grid-area: i3;
+      }
+
+      .item:nth-child(4) {
+        grid-area: i4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item">item-01</div>
+      <div class="item">item-02</div>
+      <div class="item">item-03</div>
+      <div class="item">item-04</div>
+      <div class="item">item-05</div>
+    </div>
+  </body>
+</html>

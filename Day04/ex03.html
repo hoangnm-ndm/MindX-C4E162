@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display: flex</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        background-color: yellow;
+        border: 1px solid brown;
+        width: 100%;
+        height: 300px;
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        /* column-gap: 30px;
+        row-gap: 40px; */
+        justify-content: space-between;
+        align-items: flex-start;
+        /* stretch tôn trọng chiều cao của phần tử. */
+        /* align-content: flex-end; */
+      }
+
+      .item {
+        background-color: pink;
+        border: 2px solid red;
+        width: 80px;
+        height: 80px;
+        /* flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 80px; */
+        flex: 1 1 80px;
+      }
+
+      .item-1 {
+        /* align-self: flex-end; */
+        flex-grow: 2;
+      }
+
+      .item-3 {
+        /* order: -1; */
+        /* order: xac dinh thu tu cua phan tu trong dong chay tu nhien cua html */
+        /* background-color: red; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="item item-1">item-1</div>
+      <div class="item item-2">item-2</div>
+      <div class="item item-3">item-3</div>
+    </div>
+  </body>
+</html>
