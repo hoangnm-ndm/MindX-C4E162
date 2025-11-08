@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Văn bản 2 dòng + ...</title>
+    <style>
+      .text-truncate-2lines {
+        /* Bắt buộc */
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* Số dòng tối đa */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        /* Tùy chọn: giới hạn chiều cao để chắc chắn hơn */
+        line-height: 1.5em; /* chiều cao 1 dòng */
+        max-height: calc(1.5em * 5); /* 2 dòng x 1.5em */
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text-truncate-2lines">
+      Đây là một đoạn văn bản rất dài để kiểm tra chức năng cắt 2 dòng và hiển
+      thị dấu chấm lửng. Nội dung này sẽ bị cắt sau đúng 2 dòng và thay bằng ...
+      nếu vượt quá. Thậm chí nếu đoạn văn có đến hàng trăm từ thì cũng chỉ hiện
+      2 dòng thôi nhé!
+    </p>
+  </body>
+</html>
