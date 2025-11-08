@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #a259ff;
+  --color-secondary: #3b82f6;
+  --color-grd-1: linear-gradient(to right, #a259ff, #377df7);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/* * 62.5% = 10px, 1.6rem = 1.6 * 10 = 16px */
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
