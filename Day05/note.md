@@ -9,6 +9,10 @@
 - pt (point)
 - pc (pica)
 
+**Kết luận:**
+
+- Những kích thước cần chính xác tuyệt đối như hình ảnh, border, box-shadow...thì nên dùng đơn vị đo tuyệt đối (px, cm, mm, in, pt, pc).
+
 ## Đơn vị đo tương đối
 
 - % (phần trăm): Thường là % dựa trên kích thước của phần tử cha, nhưng trong một số trường hợp cụ thể có thể là % dựa trên kích thước của chính nó hoặc của cửa sổ trình duyệt.
@@ -17,6 +21,14 @@
 - vh: viewport height
 - vw: viewport width
 
+**Kết luận:**
+
+- Những kích thước phụ thuộc vào cửa sổ trình duyệt, thiết bị hay thành phần khác thì nên dùng đơn vị đo tương đối.
+
 # Màu sắc
 
 # Prefix
+
+# Animation: Làm chuyển động.
+
+-
