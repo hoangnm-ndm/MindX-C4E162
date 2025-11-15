@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form action="">
+      <div class="mb-3">
+        <label for="" class="form-label">Nhap chieu cao</label>
+        <input type="number" class="form-control" id="height" />
+      </div>
+
+      <div class="mb-3">
+        <label for="" class="form-label">Nhap can nang</label>
+        <input type="number" class="form-control" id="weight" />
+      </div>
+
+      <div class="mb-3">
+        <button class="btn btn-primary w-100" id="calcBMI">Xem ket qua</button>
+      </div>
+
+      <div class="mb-3">
+        <p class="text-danger" id="result"></p>
+      </div>
+    </form>
+
+    <script>
+      const calcBMI = document.getElementById("calcBMI");
+      const result = document.getElementById("result");
+
+      calcBMI.addEventListener("click", function (event) {
+        event.preventDefault();
+        const height = document.getElementById("height").value;
+        const weight = document.getElementById("weight").value;
+        const bmi = weight / ((height / 100) * (height / 100));
+        result.innerText = `Chi so BMI cua ban la: ${bmi.toFixed(2)}`;
+        // alert(`Chi so BMI cua ban la: ${bmi.toFixed(2)}`);
+      });
+    </script>
+  </body>
+</html>
