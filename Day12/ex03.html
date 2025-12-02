@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="desc product-item abc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, eos!
+    </p>
+
+    <script>
+      // console.log(
+      //   (document.body.innerHTML = `
+      //   <div>
+      //     <h2 style="background-color: red">Noi dung the h2</h2>
+      //   </div>
+      // `)
+      // );
+
+      const pElement = document.getElementsByTagName("p")[0];
+      console.log(pElement.className);
+      console.log(pElement.classList);
+      console.log(pElement.classList);
+      pElement.style.color = "red";
+      pElement.style.backgroundColor = "violet";
+      pElement.style.cssText = `
+        font-size: 32px;
+        border: 2px solid red
+      `;
+      pElement.setAttribute("id-data", "1234");
+    </script>
+  </body>
+</html>

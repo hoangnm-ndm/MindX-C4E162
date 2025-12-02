@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>Xin chao ca lop!</p>
+
+      <ol id="lang-list">
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>C++</li>
+      </ol>
+    </div>
+    <script>
+      const pElement = document.querySelector("div > p");
+      console.log(pElement.innerText);
+      console.log(pElement.innerHTML);
+
+      const olElement = document.getElementById("lang-list");
+      console.log(olElement.innerText);
+      console.log(olElement.innerHTML);
+
+      console.log(olElement.outerText);
+      console.log(olElement.outerHTML);
+
+      console.log(olElement.children[0]);
+      olElement.children[0].innerText = "Python";
+    </script>
+  </body>
+</html>
