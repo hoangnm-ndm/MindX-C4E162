@@ -16,7 +16,7 @@
       const form = document.getElementsByTagName("form")[0];
       const ul = document.getElementsByClassName("list")[0];
       const todo = document.getElementById("todo");
-      const todoList = [];
+      const todoList = JSON.parse(localStorage.getItem("todoList") || "[]");
 
       // lang nghe su kien
       form.addEventListener("submit", function () {
@@ -30,7 +30,6 @@
       // Hien thi todo list
       function showTodo() {
         let htmlContent = "";
-        const todoList = JSON.parse(localStorage.getItem("todoList") || "[]");
         todoList.forEach((item) => {
           htmlContent += `
           <li><input type="checkbox" /> <span>${item}</span></li>
